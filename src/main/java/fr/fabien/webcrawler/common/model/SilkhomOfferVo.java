@@ -1,0 +1,34 @@
+package fr.fabien.webcrawler.common.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SilkhomOfferVo extends AbstractOfferVo {
+
+	List<String> metas = new ArrayList<>();
+
+	List<String> informations = new ArrayList<>();
+
+	public List<String> getInformations() {
+		return informations;
+	}
+
+	public List<String> getMetas() {
+		return metas;
+	}
+
+	public void setInformations(List<String> informations) {
+		this.informations = informations;
+	}
+
+	public void setMetas(List<String> metas) {
+		this.metas = metas;
+	}
+
+	@Override
+	public String toString() {
+		return "Emploi [titre=" + titre + ", url=" + url + ", metas=" + metas + ", datePublication=" + datePublication
+				+ ", informations=" + informations + "]";
+	}
+
+}
