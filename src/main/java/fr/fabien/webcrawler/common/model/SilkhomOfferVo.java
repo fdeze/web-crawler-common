@@ -5,9 +5,9 @@ import java.util.List;
 
 public class SilkhomOfferVo extends AbstractOfferVo {
 
-	List<String> metas = new ArrayList<>();
+	private List<String> metas = new ArrayList<>();
 
-	List<String> informations = new ArrayList<>();
+	private List<String> informations = new ArrayList<>();
 
 	public List<String> getInformations() {
 		return informations;

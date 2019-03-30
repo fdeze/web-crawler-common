@@ -5,9 +5,9 @@ import java.util.List;
 
 public class AdsearchOfferVo extends AbstractOfferVo {
 
-	List<String> metas = new ArrayList<>();
+	private List<String> metas = new ArrayList<>();
 
-	Integer page;
+	private Integer page;
 
 	public List<String> getMetas() {
 		return metas;

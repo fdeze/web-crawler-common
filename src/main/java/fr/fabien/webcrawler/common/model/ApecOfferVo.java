@@ -2,24 +2,24 @@ package fr.fabien.webcrawler.common.model;
 
 public class ApecOfferVo extends AbstractOfferVo {
 
-	String entreprise;
+	private String entreprise;
 
-	String salaire;
+	private String salaire;
 
-	String numeroOffre;
+	private String numeroOffre;
 
-	String adresseSiege;
+	private String adresseSiege;
 
-	String adresse;
+	private String adresse;
 
-	String texteHtml;
+	private String texteHtml;
 
-	String texteEntreprise;
+	private String texteEntreprise;
 
-	String texteProfil;
+	private String texteProfil;
 
-	String urlLogo;
-	
+	private String urlLogo;
+
 	public String getAdresse() {
 		return adresse;
 	}
@@ -83,7 +83,7 @@ public class ApecOfferVo extends AbstractOfferVo {
 	public void setTexteProfil(String texteProfil) {
 		this.texteProfil = texteProfil;
 	}
-	
+
 	public String getUrlLogo() {
 		return urlLogo;
 	}
