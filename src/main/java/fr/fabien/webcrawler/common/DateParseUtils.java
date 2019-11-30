@@ -25,20 +25,20 @@ public class DateParseUtils {
 	public static int setDateCalculee(String lDate) {
 		int value = 0;
 
-		String formattedDate = lDate.replaceAll("il y a ", "");
+		String formattedDate = lDate.replace("il y a ", "").replace("Candidature simplifiée", "");
 		if (formattedDate.contains("heures")) {
-			formattedDate = formattedDate.replaceAll("heures", "").trim();
+			formattedDate = formattedDate.replace("heures", "").trim();
 			value = Integer.parseInt(formattedDate);
 		} else if (formattedDate.contains("jour")) {
-			formattedDate = formattedDate.replaceAll("jours", "").replaceAll("jour", "").trim();
+			formattedDate = formattedDate.replace("jours", "").replace("jour", "").trim();
 			value = Integer.parseInt(formattedDate) * 24;
 
 		} else if (formattedDate.contains("semaine")) {
-			formattedDate = formattedDate.replaceAll("semaines", "").replaceAll("semaine", "").trim();
+			formattedDate = formattedDate.replace("semaines", "").replace("semaine", "").trim();
 			value = Integer.parseInt(formattedDate) * 24 * 7;
 
 		} else if (formattedDate.contains("mois")) {
-			formattedDate = formattedDate.replaceAll("mois", "").trim();
+			formattedDate = formattedDate.replace("mois", "").trim();
 			value = Integer.parseInt(formattedDate) * 24 * 31;
 		}
 
